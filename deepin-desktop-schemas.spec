@@ -23,7 +23,6 @@ Obsoletes:      deepin-artwork-themes <= 15.12.4
 %prep
 %setup -q
 
-# fix default background url
 sed -i '/picture-uri/s|default_background.jpg|default.png|' \
     overrides/common/com.deepin.wrap.gnome.desktop.override
 sed -i 's|python|python3|' Makefile tools/overrides.py
@@ -48,5 +47,5 @@ make test
 
 
 %changelog
-* Thu Jun 11 2020 uoser <uoser@uniontech.com> - 5.5.0.6
-- Update to 5.5.0.6
+* Thu Jul 30 2020 openEuler Buildteam <buildteam@openeuler.org> - 5.5.0.6-1
+- Package init
