@@ -10,7 +10,6 @@ BuildArch:      noarch
 BuildRequires:  python3 golang-bin
 BuildRequires:  glib2
 #add jzy
-BuildRequires:  go-lib-devel
 Requires:       dconf
 Requires:       deepin-gtk-theme
 Requires:       deepin-icon-theme
@@ -28,8 +27,8 @@ sed -i '/picture-uri/s|default_background.jpg|default.png|' \
 sed -i 's|python|python3|' Makefile tools/overrides.py
 
 %build
-export GOPATH=/usr/share/gocode
-%make_build ARCH=x86
+export GOPATH=%{_builddir}/%{name}-%{version}/vendor
+%make_build
 
 %install
 %make_install PREFIX=%{_prefix}
