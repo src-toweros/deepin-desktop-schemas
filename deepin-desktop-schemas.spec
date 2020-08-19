@@ -1,6 +1,6 @@
 Name:           deepin-desktop-schemas
 Version:        5.5.0.6
-Release:        1
+Release:        2
 Summary:        GSettings deepin desktop-wide schemas
 License:        GPLv3
 URL:            https://github.com/linuxdeepin/deepin-desktop-schemas
@@ -46,5 +46,7 @@ make test
 
 
 %changelog
+* Wed Aug 19 2020 chenbo pan <panchenbo@uniontech.com> - 5.5.0.6-2
+- remove golang devel
 * Thu Jul 30 2020 openEuler Buildteam <buildteam@openeuler.org> - 5.5.0.6-1
 - Package init
