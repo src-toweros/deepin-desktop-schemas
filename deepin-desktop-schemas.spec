@@ -1,6 +1,6 @@
 Name:           deepin-desktop-schemas
 Version:        5.8.0.26
-Release:        1
+Release:        2
 Summary:        GSettings deepin desktop-wide schemas
 License:        GPLv3
 URL:            https://github.com/linuxdeepin/deepin-desktop-schemas
@@ -15,9 +15,9 @@ BuildArch:     noarch
 BuildRequires:  golang
 BuildRequires:  glib2
 BuildRequires:  python3 golang-bin
-BuildRequires:  deepin-desktop-base
+BuildRequires:  deepin-desktop-server
 
-Requires:  deepin-desktop-base
+Requires:  deepin-desktop-server
 
 %description
 deepin-desktop-schemas contains a collection of GSettings schemas for
@@ -95,6 +95,9 @@ esac
 %{_datadir}/deepin-appstore/*
 
 %changelog
+* Wed Jul 21 2021 weidong <weidong@uniontech.com> - 5.8.0.26-2
+- Using deepin-desktop-server instead of deepin-desktop-base
+
 * Mon Jul 12 2021 weidong <weidong@uniontech.com> - 5.8.0.26-1
 - Update 5.8.0.26
 
