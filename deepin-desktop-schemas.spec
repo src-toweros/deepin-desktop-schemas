@@ -1,6 +1,6 @@
 Name:           deepin-desktop-schemas
 Version:        5.8.0.26
-Release:        2
+Release:        3
 Summary:        GSettings deepin desktop-wide schemas
 License:        GPLv3
 URL:            https://github.com/linuxdeepin/deepin-desktop-schemas
@@ -95,6 +95,9 @@ esac
 %{_datadir}/deepin-appstore/*
 
 %changelog
+* Thu Aug 26 2021 zhangkea <zhangkea@uniontech.com> - 5.8.0.26-3
+- Update vendor
+
 * Wed Jul 21 2021 weidong <weidong@uniontech.com> - 5.8.0.26-2
 - Using deepin-desktop-server instead of deepin-desktop-base
 
